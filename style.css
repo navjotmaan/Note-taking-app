@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family:cursive;
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(3, 63, 71);
+}
+
+h2 {
+    color: rgb(4, 42, 113);
+    padding: 2px 10px;
+}
+
+.note-app {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+#sidebar {
+    width: 20vw;
+    padding: 1rem;
+    min-width: 200px;
+    border-right: 2px solid #ccc;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+#newNote {
+    margin: 20px 0px;
+}
+
+#notes {
+    flex: 1;
+    height: 100vh;
+    font-family: cursive;
+    font-size: 20px;
+    padding: 20px 50px;
+    overflow-y: auto;
+    background-color: white;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    border-radius: 8px;
+    padding: 8px 12px;
+    background-color: rgb(250, 147, 3);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    min-width: 5rem;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: rgb(230, 127, 0);
+}
+
+.empty-state {
+    color: #666;
+    font-style: italic;
+}
